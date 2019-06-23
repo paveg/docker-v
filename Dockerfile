@@ -15,4 +15,5 @@ RUN git clone https://github.com/vlang/v && \
 
 RUN ln -s $HOME/code/v/compiler/v /usr/local/bin/v
 
-CMD ["bin", "bash", "v"]
+ADD ./start.v .
+RUN v run start.v
