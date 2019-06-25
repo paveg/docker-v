@@ -16,5 +16,3 @@ RUN git clone https://github.com/vlang/v && \
   ./v -o v .
 
 RUN ln -s /root/v/compiler/v /usr/local/bin/v
-COPY ./start.v .
-RUN v run start.v
