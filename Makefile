@@ -1,7 +1,7 @@
 IMAGE_NAME=docker-v
 .DEFAULT_GOAL := help
 
-.PHONY: build v run.v
+.PHONY: build v run.v help
 
 build: ## Build docker image
 	docker build -f ./Dockerfile -t $(IMAGE_NAME):latest .
